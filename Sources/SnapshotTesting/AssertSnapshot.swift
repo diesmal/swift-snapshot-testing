@@ -194,7 +194,7 @@ public func verifySnapshot<Value, Format>(
 ) -> String? {
 
   CleanCounterBetweenTestCases.registerIfNeeded()
-  let recording = recording || isRecording
+  let recording = true//recording || isRecording
 
   do {
     let fileUrl = URL(fileURLWithPath: "\(file)", isDirectory: false)
